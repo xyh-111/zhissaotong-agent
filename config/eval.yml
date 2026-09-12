@@ -1,0 +1,6 @@
+# 评测裁判（LLM-as-Judge）模型配置
+# 建议将 judge_model_name 设为与业务模型不同的独立模型，以减少「用同一模型评自己」带来的自我偏好偏差
+judge_model_name: qwen3.8-27b
+# 裁判温度，置 0 保证打分结果可复现（通过 model_kwargs 透传给 DashScope）
+judge_temperature: 0
+    
