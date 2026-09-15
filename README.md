@@ -99,14 +99,6 @@ E:\python3.11\python.exe -m eval.run_eval --limit 5
 
 评测结果输出到 `eval/reports/eval_report.md`（Markdown 报告）与 `results.json`（逐用例原始结果）。
 
-## 常见问题
-
-| 现象 | 原因 | 解决 |
-|---|---|---|
-| `No module named 'langchain_chroma'` | 用了 Anaconda 的 python | 换成 `E:\python3.11\python.exe` |
-| 报 `url error` | 模型名无效 / 走错接口 | 对话模型走兼容接口、向量模型走原生接口（已在 `model/factory.py` 处理） |
-| 检索结果为空 | 向量库未建 | 先跑 `rebuild_vector_store.py` |
-| 报 key 相关错误 | 未设 `DASHSCOPE_API_KEY` | 设置环境变量 |
 
 ## 相关文档
 
